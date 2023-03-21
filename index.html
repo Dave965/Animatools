@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link  href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular" 
+rel="stylesheet" 
+type="text/css">
+  <link rel="stylesheet" href="index.css">
+  <link  href="https://fonts.googleapis.com/css?family=Comfortaa" 
+rel="stylesheet" 
+type="text/css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="mainContainer">
+    <div>
+      <h1 class="mainTitle">Animatools</h1>
+    <div>
+    <div class="botones">
+      <div class="longitudes">
+        <div class="longitud">
+        <label for="inicial"> Longitud actual: </label>
+        <input type="number" id="inicial" class="control" min="0">
+        </div>
+        <div>
+        <label for="final"> Longitud deseada: </label>
+        <input type="number" id="final" class="control" min="0">
+        </div>
+      </div>
+      <div>
+        <button onclick=calcular() class="boton"> Calcular</button>
+        <button onclick=agregar_postit() class="boton"> Agregar</button>
+      </div>
+    </div>
+    <div class="pizarra" id="pizarra">
+      
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,242 @@
+body{
+	background-image: url(images/Fondo.png);
+  	background-size: cover;
+}
+
+.mainTitle{
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Comfortaa;
+	font-size: 3.5rem;
+	width: 85vw;
+	color: #3E414A;
+	background: rgba(255, 255, 255, 0.5);
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	user-select: none;
+}
+
+
+.mainContainer{
+	display: flex;
+	backdrop-filter: blur(10px);
+	margin: auto;
+	margin-top: auto;
+	width: 85vw;
+	height: 95vh;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+	justify-content: center;
+}
+
+.pizarra{
+
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
+	background-color: #A5846A;
+	width: 82vw;
+	height: 71vh;
+	margin: auto;
+	border-radius: 15px;
+	position:relative;
+}
+
+.botones{
+	display: flex;
+	font-family: Comfortaa;
+	margin-left: 5vw;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.longitudes{
+	margin-right: 2vw;
+}
+
+.longitud{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1vh;
+}
+
+.longitudes input{
+	font-family: inherit;
+	font-size: 100%;
+}
+
+.contenido{
+	max-height: 21.5vh;
+	display: flex;
+	flex-direction: column;
+  	flex-wrap: nowrap;
+  	overflow:auto;
+}
+
+.postit {
+  position: absolute;
+  z-index: 9;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  touch-action: none;
+  user-select: none;
+  width: 20vw;
+  height: 30vh;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+
+hr.dashed {
+	border:0px;
+  border-top: 2px dashed #8c8b8b;
+  margin: 0;
+}
+
+.botones{
+	height: 10vh;
+}
+
+.titulo{
+	font-family: inherit;
+  	width: 100%;
+  	border: 0;
+  	margin: 0;
+  	font-size:125%;
+  	background: rgba(0, 0, 0, 0);
+  	text-align: center;
+}
+
+.postitheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  color: #fff;
+  touch-action: none;
+  user-select: none;
+}
+
+input:focus{
+	outline: none;
+}
+
+.item{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 5vh;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.control{
+	background: rgba(0, 0, 0, 0);
+	border:0;
+	border-bottom:1px solid #000;
+	
+}
+
+.control:focus{
+	border-bottom:1px solid #000;box-shadow:0 1px 0 0 #000;
+}
+
+.boton{
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  width: 7vw;
+  height: 6vh;
+  margin-right: 1vw;
+  margin-left: 1vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size:140%;
+}
+
+.boton:hover{
+transform: scale(1.1,1.1);
+ box-shadow: 0px 10px 13px -7px #000000;
+}
+
+.agregar{
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  width: 7vw;
+  height: 6vh;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: inherit;
+  font-size:140%;
+}
+
+.agregar:hover{
+ transform: scale(1.1,1.1);
+ box-shadow: 0px 10px 13px -7px #000000;
+}
+
+
+.item input{
+	max-width: 4vw;
+	font-family: inherit;
+	border: 0;
+  	margin: 0;
+  	background: rgba(0, 0, 0, 0);
+  	height: 5vh;
+  	font-size:90%;
+  	border-bottom: 1px solid #000;
+}
+
+.item input:focus{
+	border-bottom:1px solid #000;box-shadow:0 1px 0 0 #000;
+}
+
+.item span{
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size:90%;
+}
+
+.eliminar {
+	background: rgba(100, 100, 100, 0.1);
+	font-family: inherit;
+	font-size:100%;
+	border: 0;
+	margin-right: 0.5vw;
+	border-radius: 50%;
+}
+
+.eliminar:hover{
+	cursor:pointer;
+	transform: 	scale(1.2,1.2);
+	color: red;
+	background: rgba(100, 100, 100, 0.3);
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border: 0px solid #ffffff;
+  }
+
